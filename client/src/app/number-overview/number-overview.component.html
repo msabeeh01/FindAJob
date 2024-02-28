@@ -1,0 +1,32 @@
+<div class="w-full flex gap-4 justify-center md:justify-start">
+  <!-- big circle -->
+  <div
+    class="w-40 h-40 bg-orange-200 rounded-full justify-center flex flex-col items-center"
+  >
+    <p class="text-4xl">{{ accepted + rejected }}</p>
+    <p class="text-xl">Total</p>
+</div>
+
+  <!-- smaller circles -->
+  <div class="flex flex-col gap-4 justify-center">
+    <div class="flex flex-row items-center gap-2">
+      <div
+        class="w-20 h-20 bg-green-200 rounded-full flex justify-center items-center"
+      >
+        <p class="text-2xl">{{ accepted }}</p>
+      </div>
+
+      <p class="font-semibold">Accepted</p>
+    </div>
+
+    <div class="flex flex-row items-center text-center gap-2">
+      <div
+        class="w-20 h-20 bg-red-200 rounded-full flex justify-center items-center"
+      >
+        <p class="text-2xl">{{ rejected }}</p>
+      </div>
+
+      <p class="font-semibold">Rejected</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="flex flex-col w-full gap-4">
+  <!-- section title -->
+  <div class="flex flex-row justify-between items-center">
+    <p class="text-2xl font-bold">Recommended</p>
+    <p class="text-sm text-gray-500">View all</p>
+  </div>
+
+  <!-- scrollable cards -->
+  <!-- for # of cards show reco-cards -->
+  <div class="w-full flex flex-row gap-4 overflow-x-scroll" >
+    <app-reco-cards *ngFor="let card of cards"></app-reco-cards>
+  </div>
+</div>
