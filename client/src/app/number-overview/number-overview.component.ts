@@ -1,4 +1,12 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
+import { catchError } from 'rxjs/operators';
+import { throwError } from 'rxjs';
+
+interface ResponseData {
+  accepted: number;
+  rejected: number;
+}
 
 @Component({
   selector: 'app-number-overview',
@@ -10,4 +18,20 @@ import { Component, Input } from '@angular/core';
 export class NumberOverviewComponent {
   @Input() accepted: number = 0;
   @Input() rejected: number = 0;
+
+  // data fetch
+  constructor(private http: HttpClient) {}
+
+  // on init, fetch data
+  ngOnInit() {
+    this.http.get<ResponseData>('http://localhost:5121/api/User/msabeeh01').subscribe({
+      next: (data) => {
+        this.accepted = data.accepted;
+        this.rejected = data.rejected;
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    });
+  }
 }

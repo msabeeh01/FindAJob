@@ -13,7 +13,5 @@ namespace server.Models.TestModel
         public DbSet<Test> Tests { get; set; }
 
         public DbSet<User> Users { get; set; }
-
-        public DbSet<Job> Jobs { get; set; }
     }
 }

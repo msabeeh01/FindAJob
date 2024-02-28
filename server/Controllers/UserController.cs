@@ -35,10 +35,22 @@ namespace server.Controllers
 
         // GET api/<UserController>/5
         [HttpGet("{name}")]
-        public string Get(int name)
+        public async Task<ActionResult<User>> GetUser(string name)
         {
-            return "value";
-        }
+            try
+            {
+                var user = await _context.Users.FirstOrDefaultAsync(u => u.username == name);
+                if (user == null)
+                {
+                    return NotFound();
+                }
+                return user;
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }   
 
         // POST api/<UserController>
         [HttpPost]
