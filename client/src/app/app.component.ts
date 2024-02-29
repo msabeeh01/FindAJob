@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { APP_INITIALIZER, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 // button import
-import { ButtonComponent } from './button/button.component';
-import { NumberOverviewComponent } from './number-overview/number-overview.component';
-import { RecommendedComponent } from './recommended/recommended.component';
+import { ButtonComponent } from './Components/button/button.component';
+import { NumberOverviewComponent } from './Components/number-overview/number-overview.component';
+import { RecommendedComponent } from './Components/recommended/recommended.component';
+import { LoginComponent } from './Components/login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from './Services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +19,9 @@ import { RecommendedComponent } from './recommended/recommended.component';
     ButtonComponent,
     NumberOverviewComponent,
     RecommendedComponent,
+    LoginComponent,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

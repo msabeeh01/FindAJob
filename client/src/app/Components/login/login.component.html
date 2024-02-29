@@ -1,0 +1,34 @@
+<!-- generate login form -->
+<div>
+  <form
+    class="flex flex-col place-items-center bg-[#f5f5f5] p-4 w-full md:w-2/3 h-full gap-8"
+    [formGroup]="loginForm"
+    (ngSubmit)="login()"
+  >
+    <h1 class="text-2xl font-bold">Login</h1>
+    <div class="flex flex-col gap-4">
+      <input
+        type="text"
+        formControlName="username"
+        class="p-2 border border-gray-300 rounded-md"
+        placeholder="Username"
+      />
+      <input
+        type="password"
+        formControlName="password"
+        class="p-2 border border-gray-300 rounded-md"
+        placeholder="Password"
+      />
+      <button type="submit" class="p-2 bg-blue-500 text-white rounded-md">
+        Login
+      </button>
+    </div>
+  </form>
+
+  <button
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-all duration-200"
+    (click)="user()"
+  >
+    User
+  </button>
+</div>

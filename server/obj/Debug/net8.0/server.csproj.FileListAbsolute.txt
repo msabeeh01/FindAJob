@@ -105,3 +105,11 @@ D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\bin\Debug\net8.0\zh
 D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\obj\Debug\net8.0\server.sourcelink.json
 D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Winter Semester 2024\Portfolio Projects 2\FindAJob\server\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

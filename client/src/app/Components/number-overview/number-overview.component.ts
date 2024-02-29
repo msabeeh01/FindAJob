@@ -18,9 +18,14 @@ interface ResponseData {
 export class NumberOverviewComponent {
   @Input() accepted: number = 0;
   @Input() rejected: number = 0;
+  username: string = '';
 
   // data fetch
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    if (typeof window !== 'undefined') {
+      this.username = JSON.parse(localStorage.getItem('currentUsername') ?? '') ;
+    }
+  }
 
   // on init, fetch data
   ngOnInit() {
