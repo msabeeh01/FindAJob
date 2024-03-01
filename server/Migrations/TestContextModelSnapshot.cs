@@ -22,42 +22,6 @@ namespace server.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("server.Models.JobsModel.Job", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("company")
-                        .HasColumnType("text");
-
-                    b.Property<string>("date")
-                        .HasColumnType("text");
-
-                    b.Property<string>("description")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("location")
-                        .HasColumnType("text");
-
-                    b.Property<string>("name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("salary")
-                        .HasColumnType("text");
-
-                    b.Property<string>("status")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Jobs");
-                });
-
             modelBuilder.Entity("server.Models.TestModel.Test", b =>
                 {
                     b.Property<string>("name")
