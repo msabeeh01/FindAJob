@@ -1,14 +1,11 @@
-<div class="flex bg-black w-screen h-screen justify-center">
-  <div
-    class="flex flex-col place-items-center w-full md:w-2/3 bg-[#f5f5f5] gap-4 p-4"
-  >
+<div class="flex bg-black w-screen justify-center">
+  <div class="flex flex-col place-items-center w-full md:w-2/3 bg-[#f5f5f5] gap-4 p-4">
     <div class="w-full flex flex-col gap-4 justify-center md:justify-start">
       <div class="flex justify-between">
         <p>Welcome to FindAJob: {{ currentUser }}</p>
-        <button 
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-all duration-200"
-        (click)="logout()"
-        >Logout</button>
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-all duration-200"
+          (click)="logout()">Logout</button>
       </div>
       <app-number-overview></app-number-overview>
     </div>
@@ -16,5 +13,7 @@
     <div class="flex flex-col w-full">
       <app-recommended></app-recommended>
     </div>
+
+      <app-files class="w-full grid grid-cols-2 grid-rows-2 gap-4"></app-files>
   </div>
 </div>

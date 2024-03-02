@@ -3185,26 +3185,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\muham\\.nuget\\packages\\": {}
+    "/Users/sabeeh/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\server.csproj",
+      "projectUniqueName": "/Users/sabeeh/Desktop/Portfolio Repos/FindAJob/FindAJob/server/server.csproj",
       "projectName": "server",
-      "projectPath": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\server.csproj",
-      "packagesPath": "C:\\Users\\muham\\.nuget\\packages\\",
-      "outputPath": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\obj\\",
+      "projectPath": "/Users/sabeeh/Desktop/Portfolio Repos/FindAJob/FindAJob/server/server.csproj",
+      "packagesPath": "/Users/sabeeh/.nuget/packages/",
+      "outputPath": "/Users/sabeeh/Desktop/Portfolio Repos/FindAJob/FindAJob/server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\muham\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/sabeeh/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3282,7 +3280,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
