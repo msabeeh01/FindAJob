@@ -1,6 +1,7 @@
-import { APP_INITIALIZER, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 // button import
 import { ButtonComponent } from './Components/button/button.component';
@@ -9,6 +10,7 @@ import { RecommendedComponent } from './Components/recommended/recommended.compo
 import { LoginComponent } from './Components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from './Services/auth.service';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -22,10 +24,14 @@ import { AuthService } from './Services/auth.service';
     LoginComponent,
     FormsModule,
     ReactiveFormsModule,
+    AsyncPipe,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  providers: [AuthService],
 })
 export class AppComponent {
   title = 'client';
+  constructor() {
+  }
 }

@@ -22,21 +22,9 @@ export class NumberOverviewComponent {
 
   // data fetch
   constructor(private http: HttpClient) {
-    if (typeof window !== 'undefined') {
-      this.username = JSON.parse(localStorage.getItem('currentUsername') ?? '') ;
-    }
   }
 
   // on init, fetch data
   ngOnInit() {
-    this.http.get<ResponseData>('http://localhost:5121/api/User/msabeeh01').subscribe({
-      next: (data) => {
-        this.accepted = data.accepted;
-        this.rejected = data.rejected;
-      },
-      error: (err) => {
-        console.log(err);
-      }
-    });
   }
 }
