@@ -5,9 +5,20 @@
     <p class="text-sm text-gray-500">View all</p>
   </div>
 
-  <!-- scrollable cards -->
   <!-- for # of cards show reco-cards -->
   <div class="flex w-full flex-row gap-4 overflow-x-scroll">
-    <app-reco-cards class="py-4" *ngFor="let card of cards"></app-reco-cards>
+    @if (jobs.length == 0) {
+      <app-reco-cards
+        class="py-4">
+      </app-reco-cards>
+    }@else{
+    <app-reco-cards
+      class="py-4"
+      *ngFor="let card of jobs"
+      [title]="card.title"
+      [description]="card.description"
+      [company]="card.company.display_name"
+      [redirect_url]="card.redirect_url"
+    ></app-reco-cards>}
   </div>
 </div>

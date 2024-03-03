@@ -99,7 +99,32 @@ namespace server.Controllers
             {
                 return BadRequest(e);
             }
-        }   
+        }
+
+        [Authorize]
+        [HttpPut]
+        public void Put(int accepted, int rejected)
+        {
+            //get user by username from token
+            var handler = new JwtSecurityTokenHandler();
+            var token = handler.ReadJwtToken(Request.Headers["Authorization"].ToString().Split(" ")[1]);
+            try
+            {
+                var usernameClaim = token.Claims.FirstOrDefault(claim => claim.Type == "username");
+                var userToUpdate = _context.Users.FirstOrDefault(u => u.username == usernameClaim.Value);
+                if (userToUpdate == null)
+                {
+                    BadRequest("User not found");
+                }
+                userToUpdate.rejected = rejected;
+                userToUpdate.accepted = accepted;
+                _context.SaveChanges();
+            }catch(Exception e)
+            {
+                BadRequest(e);
+            }
+
+        }
 
         // POST api/<UserController>
         [HttpPost]
@@ -113,5 +138,7 @@ namespace server.Controllers
         public void Delete(int id)
         {
         }
+
+
     }
 }

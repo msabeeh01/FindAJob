@@ -12,4 +12,6 @@ export class RecoCardsComponent {
   @Input() company: string = 'No company';
   @Input() description: string =
     'Lorem Ispum Dolor Sit Amet Lorem Ispum Dolor Sit Amet Lorem Ispum Dolor Sit Amet Lorem Ispum Dolor Sit AmetLorem Ispum Dolor Sit Amet Lorem Ispum Dolor Sit AmetLorem Ispum Dolor Sit AmetLorem Ispum Dolor Sit Amet Lorem Ispum Dolor Sit Amet Lorem Ispum Dolor Sit AmetLorem Ispum Dolor Sit Amet';
+  @Input() redirect_url: string = '#';  
 }
+

@@ -1,7 +1,14 @@
-<div class="w-[370px] shadow-md h-[500px] bg-white rounded-xl p-8">
+<div class="w-[370px] shadow-md h-[500px] bg-white rounded-xl p-8 flex flex-col">
+  <div class="h-[100px]">
     <!-- title -->
     <p class="text-2xl font-bold">{{ title }}</p>
     <!-- description -->
     <p class="text-sm text-gray-500">{{ company }}</p>
-    <p class="text-sm break-words overflow-y-scroll">{{ description }}</p>
+  </div>
+
+  <div class="flex flex-col justify-between h-full">
+    <p class="text-sm break-words overflow-y-auto">{{ description }}</p>
+    <a href="{{ redirect_url }}" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-all duration-200 text-center">View</a>
+  </div>
+  
 </div>

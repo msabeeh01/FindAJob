@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|d:\\winter semester 2024\\portfolio projects 2\\findajob\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|d:\\winter semester 2024\\portfolio projects 2\\findajob\\server\\controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|solutionrelative:controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|d:\\winter semester 2024\\portfolio projects 2\\findajob\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|d:\\winter semester 2024\\portfolio projects 2\\findajob\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|d:\\winter semester 2024\\portfolio projects 2\\findajob\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|d:\\winter semester 2024\\portfolio projects 2\\findajob\\server\\migrations\\20240229224628_cloud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75AE5C72-356C-4A33-934A-EA8B38A8E93A}|server.csproj|solutionrelative:migrations\\20240229224628_cloud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,23 +34,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20240229224628_cloud.cs",
-              "DocumentMoniker": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\Migrations\\20240229224628_cloud.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240229224628_cloud.cs",
-              "ToolTip": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\Migrations\\20240229224628_cloud.cs",
-              "RelativeToolTip": "Migrations\\20240229224628_cloud.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAmwGwAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T22:46:28.696Z"
+              "WhenOpened": "2024-03-03T04:13:19.436Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "JobsController.cs",
+              "DocumentMoniker": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\Controllers\\JobsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\JobsController.cs",
+              "ToolTip": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\Controllers\\JobsController.cs",
+              "RelativeToolTip": "Controllers\\JobsController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T03:19:32.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -62,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -74,20 +88,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAEEAAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-29T20:39:51.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -95,20 +109,7 @@
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-02-29T20:49:46.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\Winter Semester 2024\\Portfolio Projects 2\\FindAJob\\server\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAuwFAAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T21:35:22.441Z"
+              "WhenOpened": "2024-02-29T20:49:46.873Z"
             }
           ]
         }

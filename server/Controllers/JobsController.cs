@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using server.Models.JobsModel;
 using System.Text;
@@ -12,13 +13,15 @@ namespace server.Controllers
     public class JobsController : ControllerBase
     {
         // GET: api/<JobsController>
+        [Authorize]
         [HttpGet]
-        public async Task<ActionResult<string>> GetJobs()
+        public async Task<ActionResult<string>> GetJobs(string what, string where)
         {
             try
             {
                 var client = new HttpClient();
-                var response = await client.GetAsync("https://api.adzuna.com/v1/api/jobs/ca/search/1?app_id=7962b1df&app_key=a83d60867cd49b63bd309cc5e7da9c8d&what=fullstack&where=L5M7V1");
+                //use the parameters to search for jobs
+                var response = await client.GetAsync($"https://api.adzuna.com/v1/api/jobs/ca/search/1?app_id=7962b1df&app_key=a83d60867cd49b63bd309cc5e7da9c8d&what={what}&where={where}");
                 var byteArray = await response.Content.ReadAsByteArrayAsync();
                 var content = Encoding.UTF8.GetString(byteArray);
                 return Ok(content);

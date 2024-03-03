@@ -16,6 +16,7 @@ export class StorageService {
   }
 
   public getToken(): any {
+    if(typeof window === 'undefined') return null;
     const token = window.localStorage.getItem('token');
     if (token) {
       return JSON.parse(token);

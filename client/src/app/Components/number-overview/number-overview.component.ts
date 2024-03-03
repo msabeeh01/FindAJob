@@ -18,6 +18,7 @@ interface ResponseData {
 export class NumberOverviewComponent {
   @Input() accepted: number = 0;
   @Input() rejected: number = 0;
+
   username: string = '';
 
   // data fetch

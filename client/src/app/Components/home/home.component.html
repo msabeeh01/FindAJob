@@ -7,7 +7,8 @@
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg hover:scale-105 transition-all duration-200"
           (click)="logout()">Logout</button>
       </div>
-      <app-number-overview></app-number-overview>
+      <!-- provide number props -->
+      <app-number-overview [accepted]="accepted" [rejected]="rejected"></app-number-overview>
     </div>
 
     <div class="flex flex-col w-full">
